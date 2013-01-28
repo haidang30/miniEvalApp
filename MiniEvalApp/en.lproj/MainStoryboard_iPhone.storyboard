@@ -365,7 +365,10 @@
         <class className="METabBarView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/METabBarView.h"/>
             <relationships>
-                <relationship kind="action" name="touchButton:"/>
+                <relationship kind="action" name="touchsContactButton"/>
+                <relationship kind="action" name="touchsInfoButton"/>
+                <relationship kind="outlet" name="contactButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="METabBarViewController" superclassName="UITabBarController">
