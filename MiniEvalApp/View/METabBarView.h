@@ -27,6 +27,5 @@
 
 - (IBAction)touchsInfoButton;
 - (IBAction)touchsContactButton;
-//- (IBAction)touchButton:(id)sender;
 
 @end

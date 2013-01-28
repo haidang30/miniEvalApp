@@ -12,4 +12,6 @@
 
 @property (nonatomic, retain) IBOutlet METabBarView *customizedTabBarView;
 
+- (void) hideExistingTabBar;
+
 @end
