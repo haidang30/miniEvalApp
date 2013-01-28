@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MEAppDelegate : NSObject <UIApplicationDelegate>
+@interface MEAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UITabBarController *tabBarController;
 @end

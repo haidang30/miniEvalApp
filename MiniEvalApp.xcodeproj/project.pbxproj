@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D4C512116AD330C008F6922 /* MEStaffCustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C512016AD330C008F6922 /* MEStaffCustomViewCell.m */; };
-		8D4CC9BF16ACEE5300DCB309 /* MEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9BE16ACEE5300DCB309 /* MEViewController.m */; };
 		8D4CC9CA16ACEF9E00DCB309 /* MEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9C916ACEF9E00DCB309 /* MEConstants.m */; };
-		8D4CC9CD16ACF50900DCB309 /* MENewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9CC16ACF50900DCB309 /* MENewsTableViewController.m */; };
 		8D4CC9D316ACF8B000DCB309 /* MEStaffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9D216ACF8B000DCB309 /* MEStaffTableViewController.m */; };
-		8D4CC9D916AD01EA00DCB309 /* MEExtendStaffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9D816AD01EA00DCB309 /* MEExtendStaffTableViewController.m */; };
-		8D4CCA1216AD1CB300DCB309 /* MENewsDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CCA1116AD1CB300DCB309 /* MENewsDetailsTableViewController.m */; };
 		8D4CCA1D16AD2D0000DCB309 /* MEInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CCA1C16AD2D0000DCB309 /* MEInfoViewController.m */; };
 		8D852F8D16B26F5B00C626E0 /* METabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D852F8C16B26F5B00C626E0 /* METabbarView.xib */; };
 		8D852F9916B27ACB00C626E0 /* METabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852F9816B27ACB00C626E0 /* METabBarView.m */; };
@@ -77,18 +73,10 @@
 /* Begin PBXFileReference section */
 		8D4C511F16AD330C008F6922 /* MEStaffCustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaffCustomViewCell.h; path = View/MEStaffCustomViewCell.h; sourceTree = "<group>"; };
 		8D4C512016AD330C008F6922 /* MEStaffCustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEStaffCustomViewCell.m; path = View/MEStaffCustomViewCell.m; sourceTree = "<group>"; };
-		8D4CC9BD16ACEE5300DCB309 /* MEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEViewController.h; path = Controller/MEViewController.h; sourceTree = "<group>"; };
-		8D4CC9BE16ACEE5300DCB309 /* MEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEViewController.m; path = Controller/MEViewController.m; sourceTree = "<group>"; };
 		8D4CC9C816ACEF9E00DCB309 /* MEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEConstants.h; sourceTree = "<group>"; };
 		8D4CC9C916ACEF9E00DCB309 /* MEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEConstants.m; sourceTree = "<group>"; };
-		8D4CC9CB16ACF50900DCB309 /* MENewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MENewsTableViewController.h; path = Controller/MENewsTableViewController.h; sourceTree = "<group>"; };
-		8D4CC9CC16ACF50900DCB309 /* MENewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MENewsTableViewController.m; path = Controller/MENewsTableViewController.m; sourceTree = "<group>"; };
 		8D4CC9D116ACF8B000DCB309 /* MEStaffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaffTableViewController.h; path = Controller/MEStaffTableViewController.h; sourceTree = "<group>"; };
 		8D4CC9D216ACF8B000DCB309 /* MEStaffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEStaffTableViewController.m; path = Controller/MEStaffTableViewController.m; sourceTree = "<group>"; };
-		8D4CC9D716AD01EA00DCB309 /* MEExtendStaffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEExtendStaffTableViewController.h; path = Controller/MEExtendStaffTableViewController.h; sourceTree = "<group>"; };
-		8D4CC9D816AD01EA00DCB309 /* MEExtendStaffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEExtendStaffTableViewController.m; path = Controller/MEExtendStaffTableViewController.m; sourceTree = "<group>"; };
-		8D4CCA1016AD1CB300DCB309 /* MENewsDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MENewsDetailsTableViewController.h; path = Controller/MENewsDetailsTableViewController.h; sourceTree = "<group>"; };
-		8D4CCA1116AD1CB300DCB309 /* MENewsDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MENewsDetailsTableViewController.m; path = Controller/MENewsDetailsTableViewController.m; sourceTree = "<group>"; };
 		8D4CCA1B16AD2D0000DCB309 /* MEInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEInfoViewController.h; path = Controller/MEInfoViewController.h; sourceTree = "<group>"; };
 		8D4CCA1C16AD2D0000DCB309 /* MEInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEInfoViewController.m; path = Controller/MEInfoViewController.m; sourceTree = "<group>"; };
 		8D852F8C16B26F5B00C626E0 /* METabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = METabbarView.xib; sourceTree = "<group>"; };
@@ -198,10 +186,6 @@
 				8D93990316AFE7500039AEF7 /* MEStaffDetailsTableViewController.m */,
 				8D4CCA1B16AD2D0000DCB309 /* MEInfoViewController.h */,
 				8D4CCA1C16AD2D0000DCB309 /* MEInfoViewController.m */,
-				8D4CC9D716AD01EA00DCB309 /* MEExtendStaffTableViewController.h */,
-				8D4CC9D816AD01EA00DCB309 /* MEExtendStaffTableViewController.m */,
-				8D4CC9BD16ACEE5300DCB309 /* MEViewController.h */,
-				8D4CC9BE16ACEE5300DCB309 /* MEViewController.m */,
 				8D9398E116AF96FC0039AEF7 /* MEStaffDetailsViewController.h */,
 				8D9398E216AF96FC0039AEF7 /* MEStaffDetailsViewController.m */,
 				8DD9D20616B295C100466780 /* METabBarViewController.h */,
@@ -237,10 +221,6 @@
 		8D9C2C4516AE82FF008D9101 /* Archive */ = {
 			isa = PBXGroup;
 			children = (
-				8D4CCA1016AD1CB300DCB309 /* MENewsDetailsTableViewController.h */,
-				8D4CCA1116AD1CB300DCB309 /* MENewsDetailsTableViewController.m */,
-				8D4CC9CB16ACF50900DCB309 /* MENewsTableViewController.h */,
-				8D4CC9CC16ACF50900DCB309 /* MENewsTableViewController.m */,
 			);
 			name = Archive;
 			sourceTree = "<group>";
@@ -494,12 +474,8 @@
 				8DB5C3DE16ACE8C0008D5E02 /* AFURLConnectionOperation.m in Sources */,
 				8DB5C3DF16ACE8C0008D5E02 /* AFXMLRequestOperation.m in Sources */,
 				8DB5C3E016ACE8C0008D5E02 /* UIImageView+AFNetworking.m in Sources */,
-				8D4CC9BF16ACEE5300DCB309 /* MEViewController.m in Sources */,
 				8D4CC9CA16ACEF9E00DCB309 /* MEConstants.m in Sources */,
-				8D4CC9CD16ACF50900DCB309 /* MENewsTableViewController.m in Sources */,
 				8D4CC9D316ACF8B000DCB309 /* MEStaffTableViewController.m in Sources */,
-				8D4CC9D916AD01EA00DCB309 /* MEExtendStaffTableViewController.m in Sources */,
-				8D4CCA1216AD1CB300DCB309 /* MENewsDetailsTableViewController.m in Sources */,
 				8D4CCA1D16AD2D0000DCB309 /* MEInfoViewController.m in Sources */,
 				8D4C512116AD330C008F6922 /* MEStaffCustomViewCell.m in Sources */,
 				8DA9890F16AD986500172D5D /* MECompanyAPIClient.m in Sources */,

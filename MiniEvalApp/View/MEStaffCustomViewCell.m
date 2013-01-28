@@ -29,7 +29,7 @@
 
 
 - (void)setPerson:(MEStaff *)person {
-    _person = person;
+//    _person = person;
     
     self.nameLabel.text = person.name;
     self.userNameLabel.text = person.userName;

@@ -23,14 +23,14 @@
 
 @end
 
-@implementation MEStaffTableViewController{
-@private
-    NSMutableArray *persons;
-    
+@implementation MEStaffTableViewController
+{
+    @private NSMutableArray *persons;
     __strong UIActivityIndicatorView *_activityIndicatorView;
 }
 
-- (void)reload:(id)sender {
+- (void)reload:(id)sender
+{
     [_activityIndicatorView startAnimating];
     self.navigationItem.rightBarButtonItem.enabled = NO;
     __weak MEStaffTableViewController *weakSelf = self;
@@ -42,10 +42,17 @@
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             
-            [MEStaff globalTimelineContactsWithBlock:^(NSMutableArray *results, NSError *error) {
-                if (error) {
-                    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[error localizedDescription] delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
-                } else {                
+            [MEStaff globalTimelineContactsWithBlock:^(NSMutableArray *results, NSError *error)
+            {
+                if (error)
+                {
+                    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                message:[error localizedDescription]
+                                               delegate:nil
+                                      cancelButtonTitle:nil
+                                      otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
+                } else
+                {
                     weakSelf.results = results;
                     weakSelf.filteredArray = [NSMutableArray arrayWithCapacity:[weakSelf.results count]];
                     
@@ -68,7 +75,8 @@
         int64_t delayInSeconds = 0.2;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            if (self.results.count > 0) {
+            if (self.results.count > 0)
+            {
                 MEStaff *p = [[MEStaff alloc] init];
                 
                 p.name = @"TEST";
@@ -90,7 +98,8 @@
 
 #pragma mark - UIViewController
 
-- (void)loadView {
+- (void)loadView
+{
     [super loadView];
     
     _activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
@@ -101,7 +110,8 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -112,7 +122,9 @@
     [super viewDidLoad];    
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activityIndicatorView];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reload:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                           target:self
+                                                                                           action:@selector(reload:)];
     
     self.tableView.rowHeight = 72.0f;
     
@@ -127,10 +139,10 @@
 //    UIImage *imgSettings = [UIImage imageNamed:@"middle_button.png"];
     
     
-    UITabBar *tabBar = self.tabBarController.tabBar;
-    
-    UITabBarItem *firstTabItem = [tabBar.items objectAtIndex:0];
-    UITabBarItem *secondTabItem = [tabBar.items objectAtIndex:1];
+//    UITabBar *tabBar = self.tabBarController.tabBar;
+//    
+//    UITabBarItem *firstTabItem = [tabBar.items objectAtIndex:0];
+//    UITabBarItem *secondTabItem = [tabBar.items objectAtIndex:1];
 //    UITabBarItem *thirdTabItem = [tabBar.items objectAtIndex:2];
     
 //    [thirdTabItem setFinishedSelectedImage:imgInfoHighlight withFinishedUnselectedImage:imgInfo];

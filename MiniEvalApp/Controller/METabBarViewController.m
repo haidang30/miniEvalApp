@@ -14,26 +14,32 @@
 
 @implementation METabBarViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
     [self hideExistingTabBar];
     
-    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"METabBarView"
+    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"METabbarView"
                                                         owner:self
                                                       options:nil];
     self.customizedTabBarView = [nibObjects objectAtIndex:0];
  
     self.customizedTabBarView.delegate = self;
     
+    CGRect bottomLocation = self.customizedTabBarView.frame;
+    bottomLocation.origin.y = self.view.frame.size.height - self.customizedTabBarView.frame.size.height;
+    [self.customizedTabBarView setFrame:bottomLocation];
+
+    
     [self.view addSubview:self.customizedTabBarView];    
 }
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -60,36 +66,3 @@
     self.selectedIndex = index;
 }
 @end
-
-
-//- (void)viewDidAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
-//    
-//    [self hideExistingTabBar];
-//    
-//    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"TabBarView" owner:self options:nil];
-//    self.customTabBarView = [nibObjects objectAtIndex:0];
-//    self.customTabBarView.delegate = self;
-//    
-//    [self.view addSubview:self.customTabBarView];
-//}
-
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self hideExistingTabBar];
-    
-    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"METabBarView" owner:self options:nil];
-    self.customTabBarView = [nibObjects objectAtIndex:0];
-    
-    self.customTabBarView.delegate = self;
-    
-    CGRect bottomLocation = self.customTabBarView.frame;
-    bottomLocation.origin.y = self.view.frame.size.height - self.customTabBarView.frame.size.height;
-    [self.customTabBarView setFrame:bottomLocation];
-    
-    
-    [self.view addSubview:self.customTabBarView];
-}
-*/
