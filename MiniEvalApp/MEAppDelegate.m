@@ -13,22 +13,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    [self customizeAppearance];
+    [self customizeAppearance];
+    self.tabBarController = (UITabBarController *)self.window.rootViewController;
+    self.tabBarController.delegate = self;
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+//    return YES;
 //    self.tabBarController = (UITabBarController *)self.window.rootViewController;
 //    self.tabBarController.delegate = self;
+//    
+//    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:235.0/255.0 green:119.0/255.0 blue:63.0/255.0 alpha:1.0]];
+//    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor,[UIFont fontWithName:@"Helvetica Neue Bold" size:20.0], UITextAttributeFont, nil]];
 //    
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 //    
 //    return YES;
-    self.tabBarController = (UITabBarController *)self.window.rootViewController;
-    self.tabBarController.delegate = self;
-    
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:235.0/255.0 green:119.0/255.0 blue:63.0/255.0 alpha:1.0]];
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor,[UIFont fontWithName:@"Helvetica Neue Bold" size:20.0], UITextAttributeFont, nil]];
-    
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    
-    return YES;
 }
 
 - (void)customizeAppearance
