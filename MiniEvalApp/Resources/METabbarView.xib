@@ -75,7 +75,7 @@
 					</object>
 					<object class="IBUIButton" id="599466783">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">268</int>
+						<int key="NSvFlags">270</int>
 						<string key="NSFrame">{{0, -34}, {121, 123}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
@@ -103,7 +103,7 @@
 							<int key="type">2</int>
 							<double key="pointSize">15</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="1062854072">
+						<object class="NSFont" key="IBUIFont" id="216898385">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
@@ -111,7 +111,7 @@
 					</object>
 					<object class="IBUIButton" id="438733856">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">265</int>
+						<int key="NSvFlags">267</int>
 						<string key="NSFrame">{{199, -34}, {121, 123}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
@@ -133,7 +133,7 @@
 							<string key="NSResourceName">icon_contacts.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="1040668257"/>
-						<reference key="IBUIFont" ref="1062854072"/>
+						<reference key="IBUIFont" ref="216898385"/>
 					</object>
 				</array>
 				<string key="NSFrameSize">{320, 55}</string>
