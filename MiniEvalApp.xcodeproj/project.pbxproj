@@ -242,6 +242,8 @@
 				8D9C2C6016AEA361008D9101 /* QuartzCore.framework */,
 				8DB5C38B16ACE7FD008D5E02 /* MiniEvalApp */,
 				8D852F8C16B26F5B00C626E0 /* METabbarView.xib */,
+				8DB5C39D16ACE7FD008D5E02 /* MainStoryboard_iPhone.storyboard */,
+				8DB5C3A016ACE7FD008D5E02 /* MainStoryboard_iPad.storyboard */,
 				8DB5C39416ACE7FD008D5E02 /* MEAppDelegate.h */,
 				8DB5C39516ACE7FD008D5E02 /* MEAppDelegate.m */,
 				8DB5C38416ACE7FD008D5E02 /* Frameworks */,
@@ -274,8 +276,6 @@
 				8D4CC9C016ACEE6A00DCB309 /* Model */,
 				8D4CC9C116ACEE7100DCB309 /* View */,
 				8DB5C3B816ACE8C0008D5E02 /* Vendors */,
-				8DB5C39D16ACE7FD008D5E02 /* MainStoryboard_iPhone.storyboard */,
-				8DB5C3A016ACE7FD008D5E02 /* MainStoryboard_iPad.storyboard */,
 				8DB5C38C16ACE7FD008D5E02 /* Supporting Files */,
 				8D9C2C4516AE82FF008D9101 /* Archive */,
 			);
@@ -503,6 +503,7 @@
 				8DB5C39E16ACE7FD008D5E02 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			path = MiniEvalApp;
 			sourceTree = "<group>";
 		};
 		8DB5C3A016ACE7FD008D5E02 /* MainStoryboard_iPad.storyboard */ = {
@@ -511,6 +512,7 @@
 				8DB5C3A116ACE7FD008D5E02 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			path = MiniEvalApp;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -29,15 +29,17 @@
                                                         owner:self
                                                       options:nil];
     self.customizedTabBarView = [nibObjects objectAtIndex:0];
- 
-    self.customizedTabBarView.delegate = self;
-    
+
     CGRect bottomLocation = self.customizedTabBarView.frame;
     bottomLocation.origin.y = self.view.frame.size.height - self.customizedTabBarView.frame.size.height;
-    [self.customizedTabBarView setFrame:bottomLocation];
-
     
-    [self.view addSubview:self.customizedTabBarView];    
+    [self.customizedTabBarView setFrame:bottomLocation];
+    
+    self.customizedTabBarView.delegate = self;
+    
+    self.customizedTabBarView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+    
+    [self.view addSubview:self.customizedTabBarView];
 }
 
 
@@ -64,5 +66,19 @@
 - (void) tabWasSelected:(NSInteger)index
 {
     self.selectedIndex = index;
+//    UIViewController *viewController = [self.viewControllers objectAtIndex:index];
+    
 }
 @end
+
+
+/*
+- (id)initWithFrame:(CGRect)frame 
+{
+ if ((self = [super initWithFrame:frame])) 
+ {
+ // Initialization code
+ }
+ return self;
+}
+*/

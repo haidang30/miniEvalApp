@@ -25,7 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
 @property (strong, nonatomic) IBOutlet UIButton *contactButton;
 
-- (IBAction)touchsInfoButton;
-- (IBAction)touchsContactButton;
+- (IBAction)touchsInfoButton:(id)sender;
+- (IBAction)touchsContactButton:(id)sender;
 
 @end
