@@ -12,6 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
+<<<<<<< HEAD
     #define UIColorFromRGBWithAlpha(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue];
 
     #define UIColorFromRGB(rgbValue) UIColorFromRGBWithAlpha(rgbValue, 1.0);
@@ -22,6 +23,8 @@
     #define TAG_EMAIL_CELL 2
     #define TAG_SMS_CELL 3
 
+=======
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
     #import "MEConstants.h"
 
 #endif

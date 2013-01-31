@@ -38,6 +38,10 @@
 		8D9398DE16AF8F420039AEF7 /* middle_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9398C516AF8F420039AEF7 /* middle_button.png */; };
 		8D9398DF16AF8F420039AEF7 /* middle_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9398C616AF8F420039AEF7 /* middle_button@2x.png */; };
 		8D9398E016AF8F420039AEF7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9398C716AF8F420039AEF7 /* star.png */; };
+<<<<<<< HEAD
+=======
+		8D9398E316AF96FC0039AEF7 /* MEStaffDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9398E216AF96FC0039AEF7 /* MEStaffDetailsViewController.m */; };
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 		8D9398E616AFA47A0039AEF7 /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9398E416AFA47A0039AEF7 /* icon_back.png */; };
 		8D9398E716AFA47A0039AEF7 /* icon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9398E516AFA47A0039AEF7 /* icon_back@2x.png */; };
 		8D9398FF16AFD4800039AEF7 /* MEStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9398FE16AFD4800039AEF7 /* MEStaff.m */; };
@@ -105,6 +109,11 @@
 		8D9398C516AF8F420039AEF7 /* middle_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = middle_button.png; sourceTree = "<group>"; };
 		8D9398C616AF8F420039AEF7 /* middle_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "middle_button@2x.png"; sourceTree = "<group>"; };
 		8D9398C716AF8F420039AEF7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		8D9398E116AF96FC0039AEF7 /* MEStaffDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaffDetailsViewController.h; path = Controller/MEStaffDetailsViewController.h; sourceTree = "<group>"; };
+		8D9398E216AF96FC0039AEF7 /* MEStaffDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEStaffDetailsViewController.m; path = Controller/MEStaffDetailsViewController.m; sourceTree = "<group>"; };
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 		8D9398E416AFA47A0039AEF7 /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
 		8D9398E516AFA47A0039AEF7 /* icon_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back@2x.png"; sourceTree = "<group>"; };
 		8D9398FD16AFD47F0039AEF7 /* MEStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaff.h; path = Model/MEStaff.h; sourceTree = "<group>"; };
@@ -181,6 +190,11 @@
 				8D93990316AFE7500039AEF7 /* MEStaffDetailsTableViewController.m */,
 				8D4CCA1B16AD2D0000DCB309 /* MEInfoViewController.h */,
 				8D4CCA1C16AD2D0000DCB309 /* MEInfoViewController.m */,
+<<<<<<< HEAD
+=======
+				8D9398E116AF96FC0039AEF7 /* MEStaffDetailsViewController.h */,
+				8D9398E216AF96FC0039AEF7 /* MEStaffDetailsViewController.m */,
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 				8DD9D20616B295C100466780 /* METabBarViewController.h */,
 				8DD9D20716B295C100466780 /* METabBarViewController.m */,
 			);
@@ -472,6 +486,10 @@
 				8DA9890F16AD986500172D5D /* MECompanyAPIClient.m in Sources */,
 				8D9C2C5E16AEA227008D9101 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				8D9C2C5F16AEA227008D9101 /* UIScrollView+SVPullToRefresh.m in Sources */,
+<<<<<<< HEAD
+=======
+				8D9398E316AF96FC0039AEF7 /* MEStaffDetailsViewController.m in Sources */,
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 				8D9398FF16AFD4800039AEF7 /* MEStaff.m in Sources */,
 				8D93990416AFE7500039AEF7 /* MEStaffDetailsTableViewController.m in Sources */,
 				8D93990716AFEA950039AEF7 /* MEStaffDetailsCustomViewCell.m in Sources */,

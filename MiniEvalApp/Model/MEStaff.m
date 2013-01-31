@@ -1,5 +1,9 @@
 //
+<<<<<<< HEAD
 //  MEStaff.m
+=======
+//  MEPerson.m
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 //  MiniEvalApp
 //
 //  Created by viet on 1/21/13.
@@ -13,11 +17,19 @@
 
 NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.profile-image.loaded";
 
+<<<<<<< HEAD
 //#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
 //@interface MEPerson ()
 //+ (NSOperationQueue *)sharedProfileImageRequestOperationQueue;
 //@end
 //#endif
+=======
+#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
+@interface MEPerson ()
++ (NSOperationQueue *)sharedProfileImageRequestOperationQueue;
+@end
+#endif
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 
 
 @implementation MEStaff{
@@ -25,11 +37,15 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
     NSString *_avatarImageURLString;
     AFImageRequestOperation *_avatarImageRequestOperation;
 }
+<<<<<<< HEAD
 //@implementation MEPerson{
 //@private
 //    NSString *_avatarImageURLString;
 //    AFImageRequestOperation *_avatarImageRequestOperation;
 //}
+=======
+
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 
 - (void) setTimeStamp:(NSDate *)timeStamp
 {
@@ -43,8 +59,12 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
 {
     self = [super init];
     
+<<<<<<< HEAD
     if (self)
     {
+=======
+    if (self) {
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
         self.userId = [[personDictionary objectForKey:@"_id"] objectForKey:@"$oid"];
         self.name = [personDictionary objectForKey:@"name"];
         self.userName = [personDictionary objectForKey:@"userName"];
@@ -60,6 +80,7 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
     return self;
 }
 
+<<<<<<< HEAD
 - (void)encodeWithCoder:(NSCoder *)coder
 {
     [coder encodeObject:self.userId forKey:@"userId"];
@@ -92,6 +113,8 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
 }
 
 
+=======
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 + (void)globalTimelineContactsWithBlock:(void (^)(NSMutableArray *results, NSError *error))block {
     [[MECompanyAPIClient sharedInstance] getPath:kAppAPIPath parameters:nil
                                      success:^(AFHTTPRequestOperation *operation, id response) {
@@ -118,6 +141,7 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
 }
 
 
+<<<<<<< HEAD
 //- (NSURL *)avatarImageURL {
 //    return [NSURL URLWithString:_avatarImageURLString];
 //}
@@ -159,4 +183,47 @@ NSString * const kUserProfileImageDidLoadNotification = @"com.alamofire.user.pro
 //
 //#endif
 //
+=======
+- (NSURL *)avatarImageURL {
+    return [NSURL URLWithString:_avatarImageURLString];
+}
+
+#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
+
+@synthesize profileImage = _profileImage;
+
++ (NSOperationQueue *)sharedProfileImageRequestOperationQueue {
+    static NSOperationQueue *_sharedProfileImageRequestOperationQueue = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedProfileImageRequestOperationQueue = [[NSOperationQueue alloc] init];
+        [_sharedProfileImageRequestOperationQueue setMaxConcurrentOperationCount:8];
+    });
+    
+    return _sharedProfileImageRequestOperationQueue;
+}
+
+- (NSImage *)profileImage {
+	if (!_profileImage && !_avatarImageRequestOperation) {
+		_avatarImageRequestOperation = [AFImageRequestOperation imageRequestOperationWithRequest:[NSURLRequest requestWithURL:self.avatarImageURL] success:^(NSImage *image) {
+			self.profileImage = image;
+            
+			_avatarImageRequestOperation = nil;
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kUserProfileImageDidLoadNotification object:self userInfo:nil];
+		}];
+        
+		[_avatarImageRequestOperation setCacheResponseBlock:^NSCachedURLResponse *(NSURLConnection *connection, NSCachedURLResponse *cachedResponse) {
+			return [[NSCachedURLResponse alloc] initWithResponse:cachedResponse.response data:cachedResponse.data userInfo:cachedResponse.userInfo storagePolicy:NSURLCacheStorageAllowed];
+		}];
+		
+        [[[self class] sharedProfileImageRequestOperationQueue] addOperation:_avatarImageRequestOperation];
+	}
+	
+	return _profileImage;
+}
+
+#endif
+
+>>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 @end
