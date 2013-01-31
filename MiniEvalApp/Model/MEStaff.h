@@ -1,9 +1,5 @@
 //
-<<<<<<< HEAD
 //  MEStaff.h
-=======
-//  MEPerson.h
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 //  MiniEvalApp
 //
 //  Created by viet on 1/21/13.
@@ -14,7 +10,6 @@
 
 @interface MEStaff : NSObject
 
-<<<<<<< HEAD
 @property (nonatomic, strong) NSString  *userId;
 @property (nonatomic, strong) NSString  *name;
 @property (nonatomic, strong) NSString  *userName;
@@ -44,29 +39,5 @@
 //#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
 //@property (nonatomic, strong) NSImage *profileImage;
 //#endif
-=======
-@property (nonatomic, strong) NSString *userId;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *userName;
-@property (nonatomic, strong) NSDate *timeStamp;
-@property (nonatomic, strong) NSString *role;
-@property (nonatomic, strong) NSString *like;
-@property (nonatomic, strong) NSString *dislike;
-@property (nonatomic, strong) NSString *gender;
-@property (nonatomic, strong) NSString *image;
-@property (nonatomic, strong) NSString *contact;
-
-@property (nonatomic) NSUInteger visitedCount;
-@property (unsafe_unretained, readonly) NSURL *avatarImageURL;
-
-- (id)initWithDictionary:(NSDictionary *)personDictionary;
-
-+ (void)globalTimelineContactsWithBlock:(void (^)(NSMutableArray *results, NSError *error))block;
-
-
-#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
-@property (nonatomic, strong) NSImage *profileImage;
-#endif
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 
 @end

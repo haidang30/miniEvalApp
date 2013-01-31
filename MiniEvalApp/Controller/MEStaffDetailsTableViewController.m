@@ -10,13 +10,8 @@
 #import "MEStaffDetailsCustomViewCell.h"
 #import "UIImageView+AFNetworking.h"
 
-<<<<<<< HEAD
 @interface MEStaffDetailsTableViewController () <MFMailComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 @property (strong, nonatomic) NSMutableArray *items;
-=======
-@interface MEStaffDetailsTableViewController ()
-
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 @end
 
 @implementation MEStaffDetailsTableViewController
@@ -40,7 +35,6 @@
 
 - (void)viewDidLoad
 {
-<<<<<<< HEAD
 //    [super viewDidLoad];
 //
 //    self.title = self.person.name;
@@ -158,47 +152,6 @@
     }
     
 
-=======
-    [super viewDidLoad];
-
-    self.title = self.person.name;
-    
-    // Use NSUserDefault to store the visit count for each person.
-    // When a user is selected, increase visit count
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    NSMutableDictionary *staffs = [[NSMutableDictionary alloc] init];
-    
-    staffs = [[defaults objectForKey:STAFFS_KEY] mutableCopy];
-    
-    if ([staffs objectForKey:self.person.userId]) {
-        id obj = [staffs objectForKey:self.person.userId];
-        if ([obj isKindOfClass:[NSMutableDictionary class]]) {
-            NSMutableDictionary *staff = [obj mutableCopy];
-            self.person.visitedCount = [(NSNumber  *)[staff valueForKey:@"visitedCount"] unsignedIntegerValue]  + 1;
-            [staff setObject:[NSNumber numberWithUnsignedInt:self.person.visitedCount] forKey:@"visitedCount"];
-            
-            [staffs setObject:staff forKey:self.person.userId];
-        }
-    }
-    else {
-        self.person.visitedCount = 1;
-        NSMutableDictionary *staff = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      [NSNumber numberWithUnsignedInt:self.person.visitedCount], @"visitedCount",
-                                      nil];
-        
-        [staffs setObject:staff forKey:self.person.userId];
-    }
-    
-    [defaults setObject:staffs forKey:STAFFS_KEY];
-    [defaults synchronize];
-    
-    
-    [self customizeBackButton];
-    
-    [self customAddContactButton];
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 }
 
 - (void)customizeBackButton
@@ -277,7 +230,6 @@
     }
     
     // Configure the cell...
-<<<<<<< HEAD
     switch (indexPath.row)
     {
         case 0:            
@@ -299,20 +251,6 @@
             }
             else
             {
-=======
-    
-    
-    switch (indexPath.row) {
-        case 0:            
-            [cell.imageCell setFrame:CGRectMake(4, 4, 64, 64)];
-            if (self.person.image) {
-#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
-            [cell.imageCell setImage:self.person.profileImage];
-#else
-            [cell.imageCell setImageWithURL:[NSURL URLWithString:self.person.image] placeholderImage:[UIImage imageNamed:@"icon_profile.png"]];
-#endif
-            } else {
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
                 [cell.imageCell setImage:[UIImage imageNamed:@"icon_profile.png"]];
             }
             

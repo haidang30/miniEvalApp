@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-<<<<<<< HEAD
 #define STAFFS_KEY @"MEEStaffDetailTableViewController.2359Staffs"
-=======
-#define STAFFS_KEY @"MEExtendStaffTableViewController.2359Staffs"
->>>>>>> 91e25c646733968095ddfe63d91d45a8705ed72b
 
 #define UIColorFromRGBWithAlpha(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue];
 
