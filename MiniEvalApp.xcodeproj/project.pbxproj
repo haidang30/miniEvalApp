@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D4C512116AD330C008F6922 /* MEStaffCustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C512016AD330C008F6922 /* MEStaffCustomViewCell.m */; };
-		8D4CC9CA16ACEF9E00DCB309 /* MEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9C916ACEF9E00DCB309 /* MEConstants.m */; };
 		8D4CC9D316ACF8B000DCB309 /* MEStaffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CC9D216ACF8B000DCB309 /* MEStaffTableViewController.m */; };
 		8D4CCA1D16AD2D0000DCB309 /* MEInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CCA1C16AD2D0000DCB309 /* MEInfoViewController.m */; };
 		8D852F8D16B26F5B00C626E0 /* METabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D852F8C16B26F5B00C626E0 /* METabbarView.xib */; };
@@ -47,7 +46,6 @@
 		8D9C2C5E16AEA227008D9101 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C2C5B16AEA227008D9101 /* UIScrollView+SVInfiniteScrolling.m */; };
 		8D9C2C5F16AEA227008D9101 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C2C5D16AEA227008D9101 /* UIScrollView+SVPullToRefresh.m */; };
 		8D9C2C6116AEA361008D9101 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9C2C6016AEA361008D9101 /* QuartzCore.framework */; };
-		8DA9890F16AD986500172D5D /* MECompanyAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9890A16AD986500172D5D /* MECompanyAPIClient.m */; };
 		8DB5C38616ACE7FD008D5E02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5C38516ACE7FD008D5E02 /* UIKit.framework */; };
 		8DB5C38816ACE7FD008D5E02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5C38716ACE7FD008D5E02 /* Foundation.framework */; };
 		8DB5C38A16ACE7FD008D5E02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5C38916ACE7FD008D5E02 /* CoreGraphics.framework */; };
@@ -65,14 +63,14 @@
 		8DB5C3DE16ACE8C0008D5E02 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5C3C816ACE8C0008D5E02 /* AFURLConnectionOperation.m */; };
 		8DB5C3DF16ACE8C0008D5E02 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5C3CA16ACE8C0008D5E02 /* AFXMLRequestOperation.m */; };
 		8DB5C3E016ACE8C0008D5E02 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5C3CC16ACE8C0008D5E02 /* UIImageView+AFNetworking.m */; };
+		8DCF4DF216C3823200C64867 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCF4DF116C3823200C64867 /* MessageUI.framework */; };
+		8DCF4DFD16C39ECD00C64867 /* MECompanyAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF4DFC16C39ECD00C64867 /* MECompanyAPIClient.m */; };
 		8DD9D20816B295C100466780 /* METabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9D20716B295C100466780 /* METabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D4C511F16AD330C008F6922 /* MEStaffCustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaffCustomViewCell.h; path = View/MEStaffCustomViewCell.h; sourceTree = "<group>"; };
 		8D4C512016AD330C008F6922 /* MEStaffCustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEStaffCustomViewCell.m; path = View/MEStaffCustomViewCell.m; sourceTree = "<group>"; };
-		8D4CC9C816ACEF9E00DCB309 /* MEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEConstants.h; sourceTree = "<group>"; };
-		8D4CC9C916ACEF9E00DCB309 /* MEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEConstants.m; sourceTree = "<group>"; };
 		8D4CC9D116ACF8B000DCB309 /* MEStaffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEStaffTableViewController.h; path = Controller/MEStaffTableViewController.h; sourceTree = "<group>"; };
 		8D4CC9D216ACF8B000DCB309 /* MEStaffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEStaffTableViewController.m; path = Controller/MEStaffTableViewController.m; sourceTree = "<group>"; };
 		8D4CCA1B16AD2D0000DCB309 /* MEInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEInfoViewController.h; path = Controller/MEInfoViewController.h; sourceTree = "<group>"; };
@@ -120,8 +118,6 @@
 		8D9C2C5C16AEA227008D9101 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVPullToRefresh.h"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		8D9C2C5D16AEA227008D9101 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		8D9C2C6016AEA361008D9101 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8DA9890916AD986500172D5D /* MECompanyAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MECompanyAPIClient.h; path = Model/MECompanyAPIClient.h; sourceTree = "<group>"; };
-		8DA9890A16AD986500172D5D /* MECompanyAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MECompanyAPIClient.m; path = Model/MECompanyAPIClient.m; sourceTree = "<group>"; };
 		8DB5C38116ACE7FD008D5E02 /* MiniEvalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniEvalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB5C38516ACE7FD008D5E02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8DB5C38716ACE7FD008D5E02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +149,9 @@
 		8DB5C3CA16ACE8C0008D5E02 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		8DB5C3CB16ACE8C0008D5E02 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		8DB5C3CC16ACE8C0008D5E02 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		8DCF4DF116C3823200C64867 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8DCF4DFB16C39ECD00C64867 /* MECompanyAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MECompanyAPIClient.h; sourceTree = "<group>"; };
+		8DCF4DFC16C39ECD00C64867 /* MECompanyAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECompanyAPIClient.m; sourceTree = "<group>"; };
 		8DD9D20616B295C100466780 /* METabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = METabBarViewController.h; path = Controller/METabBarViewController.h; sourceTree = "<group>"; };
 		8DD9D20716B295C100466780 /* METabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = METabBarViewController.m; path = Controller/METabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCF4DF216C3823200C64867 /* MessageUI.framework in Frameworks */,
 				8D9C2C6116AEA361008D9101 /* QuartzCore.framework in Frameworks */,
 				8DB5C38616ACE7FD008D5E02 /* UIKit.framework in Frameworks */,
 				8DB5C38816ACE7FD008D5E02 /* Foundation.framework in Frameworks */,
@@ -192,8 +192,6 @@
 			children = (
 				8D9398FD16AFD47F0039AEF7 /* MEStaff.h */,
 				8D9398FE16AFD4800039AEF7 /* MEStaff.m */,
-				8DA9890916AD986500172D5D /* MECompanyAPIClient.h */,
-				8DA9890A16AD986500172D5D /* MECompanyAPIClient.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -209,13 +207,6 @@
 				8D852F9816B27ACB00C626E0 /* METabBarView.m */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		8D9C2C4516AE82FF008D9101 /* Archive */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Archive;
 			sourceTree = "<group>";
 		};
 		8D9C2C5816AEA20B008D9101 /* SVPullToRefresh */ = {
@@ -234,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				8D93990016AFDFD70039AEF7 /* Default-568h@2x.png */,
-				8D9C2C6016AEA361008D9101 /* QuartzCore.framework */,
 				8DB5C38B16ACE7FD008D5E02 /* MiniEvalApp */,
 				8D852F8C16B26F5B00C626E0 /* METabbarView.xib */,
 				8DB5C39D16ACE7FD008D5E02 /* MainStoryboard_iPhone.storyboard */,
@@ -257,6 +247,8 @@
 		8DB5C38416ACE7FD008D5E02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DCF4DF116C3823200C64867 /* MessageUI.framework */,
+				8D9C2C6016AEA361008D9101 /* QuartzCore.framework */,
 				8DB5C38516ACE7FD008D5E02 /* UIKit.framework */,
 				8DB5C38716ACE7FD008D5E02 /* Foundation.framework */,
 				8DB5C38916ACE7FD008D5E02 /* CoreGraphics.framework */,
@@ -268,11 +260,11 @@
 			isa = PBXGroup;
 			children = (
 				8D4CC9BB16ACEDFE00DCB309 /* Controller */,
+				8DCF4DFA16C39ECC00C64867 /* Managers */,
 				8D4CC9C016ACEE6A00DCB309 /* Model */,
 				8D4CC9C116ACEE7100DCB309 /* View */,
 				8DB5C3B816ACE8C0008D5E02 /* Vendors */,
 				8DB5C38C16ACE7FD008D5E02 /* Supporting Files */,
-				8D9C2C4516AE82FF008D9101 /* Archive */,
 			);
 			path = MiniEvalApp;
 			sourceTree = "<group>";
@@ -280,8 +272,6 @@
 		8DB5C38C16ACE7FD008D5E02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D4CC9C816ACEF9E00DCB309 /* MEConstants.h */,
-				8D4CC9C916ACEF9E00DCB309 /* MEConstants.m */,
 				8DB5C3AE16ACE8C0008D5E02 /* Resources */,
 				8DB5C38D16ACE7FD008D5E02 /* MiniEvalApp-Info.plist */,
 				8DB5C38E16ACE7FD008D5E02 /* InfoPlist.strings */,
@@ -358,6 +348,15 @@
 				8DB5C3CC16ACE8C0008D5E02 /* UIImageView+AFNetworking.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		8DCF4DFA16C39ECC00C64867 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8DCF4DFB16C39ECD00C64867 /* MECompanyAPIClient.h */,
+				8DCF4DFC16C39ECD00C64867 /* MECompanyAPIClient.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,11 +464,9 @@
 				8DB5C3DE16ACE8C0008D5E02 /* AFURLConnectionOperation.m in Sources */,
 				8DB5C3DF16ACE8C0008D5E02 /* AFXMLRequestOperation.m in Sources */,
 				8DB5C3E016ACE8C0008D5E02 /* UIImageView+AFNetworking.m in Sources */,
-				8D4CC9CA16ACEF9E00DCB309 /* MEConstants.m in Sources */,
 				8D4CC9D316ACF8B000DCB309 /* MEStaffTableViewController.m in Sources */,
 				8D4CCA1D16AD2D0000DCB309 /* MEInfoViewController.m in Sources */,
 				8D4C512116AD330C008F6922 /* MEStaffCustomViewCell.m in Sources */,
-				8DA9890F16AD986500172D5D /* MECompanyAPIClient.m in Sources */,
 				8D9C2C5E16AEA227008D9101 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				8D9C2C5F16AEA227008D9101 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				8D9398FF16AFD4800039AEF7 /* MEStaff.m in Sources */,
@@ -477,6 +474,7 @@
 				8D93990716AFEA950039AEF7 /* MEStaffDetailsCustomViewCell.m in Sources */,
 				8D852F9916B27ACB00C626E0 /* METabBarView.m in Sources */,
 				8DD9D20816B295C100466780 /* METabBarViewController.m in Sources */,
+				8DCF4DFD16C39ECD00C64867 /* MECompanyAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,8 +23,8 @@
 {
     if (self.delegate != nil && [self.delegate respondsToSelector:@selector(tabWasSelected:)])
     {
-        [self.contactButton setImage:[UIImage imageNamed:@"icon_contacts.png"] forState:UIControlStateNormal];
-        [self.infoButton setImage:[UIImage imageNamed:@"icon_info_selected.png"] forState:UIControlStateNormal];
+        [self.contactButton setImage:[UIImage imageNamed:@"icon_contacts"] forState:UIControlStateNormal];
+        [self.infoButton setImage:[UIImage imageNamed:@"icon_info_selected"] forState:UIControlStateNormal];
         [self.delegate tabWasSelected:self.infoButton.tag];
     }
 }
@@ -33,8 +33,8 @@
 {
     if (self.delegate != nil && [self.delegate respondsToSelector:@selector(tabWasSelected:)])
     {
-        [self.contactButton setImage:[UIImage imageNamed:@"icon_contacts_selected.png"] forState:UIControlStateNormal];
-        [self.infoButton setImage:[UIImage imageNamed:@"icon_info.png"] forState:UIControlStateNormal];
+        [self.contactButton setImage:[UIImage imageNamed:@"icon_contacts_selected"] forState:UIControlStateNormal];
+        [self.infoButton setImage:[UIImage imageNamed:@"icon_info"] forState:UIControlStateNormal];
         [self.delegate tabWasSelected:self.contactButton.tag];
     }
 

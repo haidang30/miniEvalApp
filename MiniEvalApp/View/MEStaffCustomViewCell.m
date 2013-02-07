@@ -34,7 +34,7 @@
 //    self.nameLabel.text = person.name;
 //    self.userNameLabel.text = person.userName;
 //    if (person.image) {
-//        [self.avatar setImageWithURL:[NSURL URLWithString:person.image] placeholderImage:[UIImage imageNamed:@"icon_profile.png"]];
+//        [self.avatar setImageWithURL:[NSURL URLWithString:person.image] placeholderImage:[UIImage imageNamed:@"icon_profile"]];
 //    }
 //        
 //    UIColor *genderCellColor;
@@ -59,17 +59,17 @@
     self.userNameLabel.text = person.userName;
     if (person.image)
     {
-        [self.avatar setImageWithURL:[NSURL URLWithString:person.image] placeholderImage:[UIImage imageNamed:@"icon_profile.png"]];
+        [self.avatar setImageWithURL:[NSURL URLWithString:person.image] placeholderImage:[UIImage imageNamed:@"icon_profile"]];
     } else
     {
-        [self.avatar setImage:[UIImage imageNamed:@"icon_profile.png"]];
+        [self.avatar setImage:[UIImage imageNamed:@"icon_profile"]];
     }
     
     UIColor *genderColor;
     
     if ([person.gender isEqualToString:@"male"])
     {
-        genderColor = UIColorFromRGB(kDarkOrganColor);
+        genderColor = UIColorFromRGB(kDarkOrangeColor);
     } else {
         genderColor = UIColorFromRGB(kDarkBlueColor);
     }
@@ -82,8 +82,9 @@
     [self.userNameLabel setNumberOfLines:0];
     
     UIView *backView = [[UIView alloc] initWithFrame:self.frame];
-    if (indexPath.row % 2) {
-        backView.backgroundColor = UIColorFromRGB(kLightOrganColor);
+    if (indexPath.row % 2)
+    {
+        backView.backgroundColor = UIColorFromRGB(kLightOrangeColor);
     } else {
         backView.backgroundColor = [UIColor whiteColor];
     }

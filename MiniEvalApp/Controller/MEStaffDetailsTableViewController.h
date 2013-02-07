@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "MEStaff.h"
 
-#import <MessageUI/MessageUI.h>
-#import <MessageUI/MFMailComposeViewController.h>
-#import <MessageUI/MFMessageComposeViewController.h>
 
 @interface MEStaffDetailsTableViewController : UITableViewController
 

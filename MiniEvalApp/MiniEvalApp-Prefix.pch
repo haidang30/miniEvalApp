@@ -9,19 +9,40 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
 
-    #define UIColorFromRGBWithAlpha(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue];
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-    #define UIColorFromRGB(rgbValue) UIColorFromRGBWithAlpha(rgbValue, 1.0);
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import <MessageUI/MFMessageComposeViewController.h>
 
-    #define STAFFS_KEY @"MEStaffDetailTableViewController.2359Staffs"
+#import "MEStaff.h"
+#import "MECompanyAPIClient.h"
 
-    #define TAG_AVATAR_CELL 1
-    #define TAG_EMAIL_CELL 2
-    #define TAG_SMS_CELL 3
 
-    #import "MEConstants.h"
+
+
+
+#define UIColorFromRGBWithAlpha(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue];
+
+#define UIColorFromRGB(rgbValue)        UIColorFromRGBWithAlpha(rgbValue, 1.0);
+
+#define kLightOrangeColor               0xfff0db
+#define kDarkOrangeColor                0xcd853f
+#define kMainColor                      0xEB773F
+#define kDarkBlueColor                  0x199CB1
+
+#define kAppAPIBaseURLString            @"https://dl.dropbox.com/"
+#define kAppAPIPath                     @"/u/11295402/MiniEval/data.json"
+#define kAppAPIToken                    @""
+#define kAppJSONPath                    @"https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http%3A%2F%2Fwww.digg.com%2Frss%2Findex.xml"
+
+#define STAFFS_KEY                      @"MEStaffDetailTableViewController.2359Staffs"
+
+#define TAG_AVATAR_CELL                 1
+#define TAG_EMAIL_CELL                  2
+#define TAG_SMS_CELL                    3
+
 
 #endif

@@ -23,7 +23,6 @@
 
 @property (nonatomic, strong) NSNumber  *visitedCount;
 @property (nonatomic) BOOL highestVisitedCount;
-//@property (unsafe_unretained, readonly) NSURL *avatarImageURL;
 
 @property (nonatomic, strong) UIImage *avatar;
 
@@ -31,13 +30,5 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 
 - (id)initWithCoder:(NSCoder *)aDecoder;
-
-+ (void) findHighestVisitedPerson:(NSArray *)persons;
-+ (void)globalTimelineContactsWithBlock:(void (^)(NSMutableArray *results, NSError *error))block;
-
-//
-//#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
-//@property (nonatomic, strong) NSImage *profileImage;
-//#endif
 
 @end

@@ -13,4 +13,7 @@
 
 + (id) sharedInstance;
 
+- (void)updateHighestVisitedPerson;
+- (void)globalTimelineContactsWithBlock:(void (^)(NSMutableArray *results, NSError *error))block;
+
 @end
